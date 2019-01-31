@@ -105,7 +105,7 @@ def big_shoe_rebounds
   biggest_shoesize = nil 
       game_hash.collect do |team, stats|
         stats[:players].collect do |player, data|
-          numbs.push(data[:shoe])
+          numbs << data[:shoe]
           biggest_shoesize = numbs.sort[-1] 
              data.collect do |category, stat|
                if category == :shoe 
