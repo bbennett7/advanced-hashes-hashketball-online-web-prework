@@ -85,4 +85,15 @@ def player_numbers(team)
   return jersey_numbers
 end
 
-
+def player_stats(player_name)
+  game_hash.each do |team_location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player, stats|
+          if player == "#{player_name}"
+            return stats
+        end
+      end
+    end
+  end
+end
