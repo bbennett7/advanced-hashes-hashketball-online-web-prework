@@ -44,6 +44,8 @@ def shoe_size(name)
       if attribute == :players
         data.each do |player, stats|
           if player = "#{name}"
+            stats
+            return stats.fetch(:shoe)
           end
         end
       end
