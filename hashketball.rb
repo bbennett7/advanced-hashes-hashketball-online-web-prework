@@ -107,6 +107,7 @@ def big_shoe_rebounds
           stats.each do |stat, value|
             if stat == :shoe
               stat.max
+            end
           end
         end
       end
