@@ -30,6 +30,7 @@ def num_points_scored(name)
         data.each do |player, stats|
           if player == "#{name}"
             return player, stats
+              
           end
         end
       end
