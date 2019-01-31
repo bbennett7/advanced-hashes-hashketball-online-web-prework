@@ -100,7 +100,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  playerrebound = nil 
+  player_rebound = nil 
   numbs = []
   biggest_shoesize = nil 
       game_hash.collect do |team, stats|
@@ -116,5 +116,5 @@ def big_shoe_rebounds
             end
           end
         end
-        playerrebound
+        player_rebound
       end
