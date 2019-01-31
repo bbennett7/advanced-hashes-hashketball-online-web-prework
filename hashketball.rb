@@ -30,7 +30,7 @@ def num_points_scored(name)
         data.each do |player, stats|
           for player == "#{name}"
             stats.fetch(:points)
-          end
+
         end
       end
     end
