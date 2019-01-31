@@ -92,6 +92,7 @@ def player_stats(player_name)
         data.each do |player, stats|
           if player == "#{player_name}"
             return stats
+          end
         end
       end
     end
