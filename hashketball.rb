@@ -27,10 +27,7 @@ def num_points_scored(name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
-        data.each do |player, stats|
-          if player == "#{name}"
-            
-          end
+        data.fetch(:players)
         end
       end
     end
