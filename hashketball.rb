@@ -57,7 +57,7 @@ def team_colors(team)
   game_hash.each do |team_location, team_data|
     team_data.each do |attribute, data|
       if attribute.fetch(:team_name) == "#{team}"
-        return team_data.fetch(:colors)
+        return :team_name
       end
     end
   end
