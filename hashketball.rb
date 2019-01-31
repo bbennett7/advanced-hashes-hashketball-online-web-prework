@@ -104,7 +104,10 @@ def big_shoe_rebounds
     team_data.each do |attribute, data|
       if attribute = :players
         data.each do |player, stats|
-          
+          stats.each do |stat, value|
+            if stat == :shoe
+              stat.max
+          end
         end
       end
     end
