@@ -25,7 +25,7 @@ end
 
 def num_points_scored(name)
   game_hash.each do |location, team_data|
-    team_data.each do |attribute,data|
+    team_data.each do |attribute, data|
         data.fetch(:players)
     end
   end
