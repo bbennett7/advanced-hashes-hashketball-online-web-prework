@@ -76,7 +76,6 @@ def player_numbers(team)
       team_data.each do |attribute, stats|
         if attribute == :players
             jersey_numbers << stats.fetch(:number)
-          end
         end
       end
     end
