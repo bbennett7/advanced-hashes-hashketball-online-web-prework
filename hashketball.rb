@@ -27,10 +27,11 @@ def num_points_scored(name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute,data|
         if data == :players
-          return data.fetch("#{name}").fetch(:points)
+          points_fetched = data.fetch("#{name}").fetch(:points)
         end
     end
   end
+  return points_fetched
 end
 
 
