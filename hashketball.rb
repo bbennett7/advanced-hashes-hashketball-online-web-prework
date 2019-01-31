@@ -66,5 +66,6 @@ def team_names
   game_hash.each do |team_location, team_data|
     team_names << team_data.fetch(:team_name)
   end
+  return team_names
 end
 
