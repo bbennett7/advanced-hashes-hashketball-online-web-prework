@@ -43,7 +43,7 @@ def shoe_size(name)
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |player, stats|
-          if player = "#{name}"
+          if player == "#{name}"
             stats
             return stats.fetch(:shoe)
           end
