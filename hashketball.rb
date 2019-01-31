@@ -27,7 +27,13 @@ def num_points_scored(name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
-        :players.fetch("#{name}").fetch(:points)
+        data.each do |name, stat|
+          if name == "#{name}"
+            name.each do |stat, number|
+              return stat.fetch(:points)
+            end
+          end
+        end
       end
     end
   end
