@@ -30,8 +30,6 @@ def num_points_scored(name)
         data.each do |name, stat|
           name.find("#{name}")
               return stat.fetch(:points)
-
-          end
         end
       end
     end
