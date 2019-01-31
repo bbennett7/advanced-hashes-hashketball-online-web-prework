@@ -98,3 +98,15 @@ def player_stats(player_name)
     end
   end
 end
+
+def big_shoe_rebounds
+  game_hash.each do |team_location, team_data|
+    team_data.each do |attribute, data|
+      if attribute = :players
+        data.each do |player, stats|
+          
+        end
+      end
+    end
+  end
+end
