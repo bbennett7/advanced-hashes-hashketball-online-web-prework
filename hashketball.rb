@@ -28,8 +28,8 @@ def num_points_scored(name)
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |name, stat|
-          name.find("#{name}")
-              return stat.fetch(:points)
+          if name == "#{name}"
+            return "#{name}"
         end
       end
     end
