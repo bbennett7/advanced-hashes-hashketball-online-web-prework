@@ -69,3 +69,11 @@ def team_names
   return team_names
 end
 
+def player_numbers(team)
+  jersey_numbers = []
+  game_hash.each do |team_location, team_data|
+    team_data.each do |attribute, data|
+      if attribute = :team_name
+    end
+  end
+end
