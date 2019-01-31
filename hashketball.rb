@@ -73,7 +73,7 @@ def player_numbers(team)
   jersey_numbers = []
   game_hash.each do |team_location, team_data|
     if team_data.fetch(:team_name) == "#{team}"
-      team_data.each do |attribute, stats|
+      team_data.each do |attribute, data|
         if attribute == :players
           attribute.each do |player, stats|
           end
