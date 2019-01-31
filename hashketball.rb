@@ -76,6 +76,7 @@ def player_numbers(team)
       team_data.each do |attribute, data|
         if attribute == :players
           data.each do |player, stats|
+            jersey_numbers << stats.fetch(:number)
           end
         end
       end
