@@ -53,7 +53,21 @@ def shoe_size(name)
   end
 end
 
+def team_colors(team)
+  game_hash.each do |team_location, team_data|
+    if team_data.fetch(:team_name) == "#{team}"
+      return team_data.fetch(:colors)
+    end
+  end
+end
 
+def team_names
+  team_names = []
+  game_hash.each do |team_location, team_data|
+    team_names << team_data.fetch(:team_name)
+  end
+  return team_names
+end
 
 def player_numbers(team)
   jersey_numbers = []
