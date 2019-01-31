@@ -29,7 +29,7 @@ def num_points_scored(name)
       if attribute == :players
         data.each do |player, stat|
           if player == "#{name}"
-            player.each do |stat, number|
+            return 
               return stat.fetch(:points)
             end
           end
