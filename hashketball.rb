@@ -76,9 +76,7 @@ def player_numbers(team)
       team_data.each do |attribute, stats|
         if attribute == :player
           attribute.each do |stat, value|
-            if stat == :number
-              jersey_numbers << value
-            end
+
           end
         end
       end
